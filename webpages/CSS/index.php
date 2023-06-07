@@ -18,7 +18,7 @@
 
         if($count > 0){
             $_SESSION['uname'] = $uname;
-            header('Location: webpage.html');
+            header('Location: ../webpage.html');
         }
         else{
           $_SESSION['message'] = "Invalid <b>username</b> or <b>password</b>!";
@@ -76,7 +76,7 @@
 <input type="password" id="password" class="form-control" name="password" placeholder="Password">
 </div>
 <button type="submit" class="btn btn-black" onclick="loginFunc()" name="submit" value="Submit">LOGIN</button>
-<button type="submit" class="btn btn-secondary">Register</button>
+<button type="submit" class="btn btn-secondary"><a href="Registration.php">Register</a></button>
 </form>
 <script>
         function loginFunc() {
